@@ -1,0 +1,22 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a {
+  color: var(--vt-c-white);
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* TODO: media rules for responsiveness */
