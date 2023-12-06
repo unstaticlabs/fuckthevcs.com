@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nanum+Pen+Script&family=Open+Sans:wght@400;700&display=swap');
 
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
@@ -100,6 +100,24 @@ h1 {
   font-size: 3rem;
 }
 
-strong, b, .strong {
+strong,
+b,
+.strong {
   font-weight: 700;
+}
+
+.handwritten {
+  font-family: 'Nanum Pen Script', 'Comic Sans MS', serif;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
 }

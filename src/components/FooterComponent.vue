@@ -12,6 +12,7 @@ div.footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.5rem;
 
   img {
     width: 50px;

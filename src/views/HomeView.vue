@@ -88,9 +88,13 @@ onMounted(() => {
         </p>
         <p><strong>Join the Fcku The VCs project as a...</strong></p>
         <div class="btns-center">
-          <RouterLink to="/contributors" class="btn secondary">Contributor</RouterLink>
-          <RouterLink to="/users" class="btn secondary">User</RouterLink>
-          <RouterLink to="/curators" class="btn secondary">Curator</RouterLink>
+          <RouterLink to="/contributors" class="btn secondary"
+            >Contributor<br />(I've got skills!)</RouterLink
+          >
+          <RouterLink to="/users" class="btn secondary">User<br />(I've got needs!)</RouterLink>
+          <RouterLink to="/curators" class="btn secondary"
+            >Curator<br />(I've got ideas!)</RouterLink
+          >
         </div>
       </div>
     </div>
@@ -189,7 +193,7 @@ onMounted(() => {
         <p><strong>Why not invest your time and get a share of what you built?</strong></p>
       </div>
       <div class="col col-media rellax" data-rellax-speed="-1" data-rellax-mobile-speed="0">
-        <h2>Value = Effort x Hype</h2>
+        <h2 class="handwritten">Value = Effort x Hype</h2>
       </div>
     </div>
     <div class="row content">
@@ -222,11 +226,11 @@ onMounted(() => {
   &::before {
     content: '';
     position: absolute;
-    left: 1.4rem;
-    padding: 0 1rem;
-    margin-top: 2.6rem;
+    left: 16px;
+    padding: 0 16px;
+    margin-top: 32px;
     width: 105%;
-    height: 1.8rem;
+    height: 24px;
     background-color: var(--color-accent);
     z-index: -1;
     transition: 0.2s all;
@@ -429,14 +433,15 @@ div.container {
 
 @media (max-width: 800px) {
   div.container {
-    padding: 0 3.5rem;
+    padding: 0 2rem;
 
     div.row {
       flex-direction: column;
     }
   }
+
   h1 {
-    font-size: 2.5rem;
+    min-width: auto;
   }
 
   .col.col-media.rocket-container {
@@ -444,6 +449,17 @@ div.container {
   }
   div.btns-center {
     flex-direction: column;
+  }
+  div.btns-right {
+    justify-content: center;
+  }
+
+  div.col {
+    flex-basis: auto !important;
+  }
+
+  .highlighted::before {
+    margin-top: 16px;
   }
 }
 </style>
