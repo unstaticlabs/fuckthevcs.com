@@ -11,6 +11,7 @@ a {
   color: var(--vt-c-white);
   text-decoration: underline;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 @media (hover: hover) {
