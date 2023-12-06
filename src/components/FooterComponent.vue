@@ -4,7 +4,7 @@
       <img src="../assets/easteregg.png" alt="an easter egg" />
     </a>
     <p>
-      FuckTheVCs.com — an Unstatic Lab project propulsed by The Open Market Foundation —
+      FuckTheVCs.com — an Unstatic Labs project propulsed by The Open Market Foundation —
       Illustration by&nbsp;
       <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons&nbsp;8</a
       >&nbsp;— 2023 ©
