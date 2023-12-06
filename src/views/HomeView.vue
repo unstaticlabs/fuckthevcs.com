@@ -4,8 +4,6 @@ import { RouterLink } from 'vue-router'
 
 import Rellax from 'rellax'
 
-import FooterComponent from '@/components/FooterComponent.vue'
-
 const scrolled = ref(false)
 
 const updateScroll = () => {
@@ -217,7 +215,6 @@ onMounted(() => {
       </div>
     </div>
   </div>
-  <FooterComponent />
 </template>
 
 <style lang="scss" scoped>
