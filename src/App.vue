@@ -9,6 +9,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/contributors">Contributors</RouterLink>
+      <RouterLink to="/manifesto">Manifesto</RouterLink>
     </nav>
   </header>
 

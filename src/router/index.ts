@@ -2,18 +2,21 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import HomeView from '../views/HomeView.vue'
 import ContributorsView from '../views/ContributorsView.vue'
+import ManifestoView from '../views/ManifestoView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
       component: HomeView
     },
     {
+      path: '/manifesto',
+      component: ManifestoView
+    },
+    {
       path: '/contributors',
-      name: 'contributors',
       component: ContributorsView
     },
     // {
