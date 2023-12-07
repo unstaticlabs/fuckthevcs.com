@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import ScrollerPageView from './ScrollerPageView.vue'
+
+import SocialsComponent from '../components/SocialsComponent.vue'
 </script>
 
 <template>
@@ -11,6 +13,7 @@ import ScrollerPageView from './ScrollerPageView.vue'
           We will be live soon with the FTVCs crowd-investment platform. Make sure to be one of the
           first investors, contributors, or users to join.
         </p>
+        <SocialsComponent />
       </div>
     </div>
     <div class="row main">

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ScrollerPageView from './ScrollerPageView.vue'
+import SocialsComponent from '../components/SocialsComponent.vue'
 
 import { RouterLink } from 'vue-router'
 </script>
@@ -24,6 +25,7 @@ import { RouterLink } from 'vue-router'
             >.</strong
           >
         </p>
+        <SocialsComponent />
       </div>
       <div
         class="col col-media rocket-container rellax"
