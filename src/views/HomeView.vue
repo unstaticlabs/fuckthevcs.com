@@ -70,15 +70,13 @@ import { RouterLink } from 'vue-router'
         <p>
           <strong>We aim to enable each and every human to live from their craft.</strong>
         </p>
-        <p><strong>Join the Fcku The VCs project as a...</strong></p>
+        <p><strong>Join the "Fuck The VCs" movement as a...</strong></p>
         <div class="btns-center">
-          <RouterLink to="/contributors" class="btn secondary"
+          <RouterLink to="/contributors" class="btn"
             >Contributor<br />(I've got skills!)</RouterLink
           >
-          <RouterLink to="/users" class="btn secondary">User<br />(I've got needs!)</RouterLink>
-          <RouterLink to="/curators" class="btn secondary"
-            >Curator<br />(I've got ideas!)</RouterLink
-          >
+          <RouterLink to="/users" class="btn">User<br />(I've got needs!)</RouterLink>
+          <RouterLink to="/investors" class="btn">Curator<br />(I've got ideas!)</RouterLink>
         </div>
       </div>
     </div>
@@ -208,14 +206,12 @@ div.rocket-container {
   z-index: 3;
   overflow-y: visible;
   height: 3rem;
-  .rocket-container {
-    z-index: 0;
-    img.rocket {
-      height: auto;
-      margin: 0;
-      display: block;
-      width: 22rem;
-    }
+
+  img.rocket {
+    height: auto;
+    margin: 0;
+    display: block;
+    width: 22rem;
   }
 }
 </style>

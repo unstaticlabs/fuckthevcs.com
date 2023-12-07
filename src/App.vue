@@ -9,7 +9,10 @@ import FooterComponent from '@/components/FooterComponent.vue'
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/contributors">Contributors</RouterLink>
+      <RouterLink to="/users">Users</RouterLink>
+      <RouterLink to="/investors">Investors</RouterLink>
       <RouterLink to="/manifesto">Manifesto</RouterLink>
+      <RouterLink to="/join">Join the movement!</RouterLink>
     </nav>
   </header>
 
@@ -20,7 +23,13 @@ import FooterComponent from '@/components/FooterComponent.vue'
 
 <style lang="scss" scoped>
 nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   padding: 2rem;
+
   & > a {
     text-decoration: none;
     margin-right: 32px;

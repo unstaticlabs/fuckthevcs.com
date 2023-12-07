@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
+const props = defineProps(['disabled'])
+
 import Rellax from 'rellax'
 
 const scrolled = ref(false)
 
 const updateScroll = () => {
-  scrolled.value = window.scrollY >= window.innerHeight / 4
+  if (!props.disabled) scrolled.value = window.scrollY >= window.innerHeight / 4
 }
 
 onMounted(() => {
@@ -14,6 +16,7 @@ onMounted(() => {
     breakpoints: [0, 800, 1201]
   })
   window.addEventListener('scroll', updateScroll)
+  window.scrollTo(0, 0)
 })
 </script>
 
@@ -85,7 +88,7 @@ div.container {
       background: rgba(var(--color-accent-rgb), 0.79);
     }
     &.secondary {
-      background: rgba(var(--color-primary-rgb), 0.79);
+      background: rgba(var(--color-secondary-rgb), 0.79);
     }
     &.large {
       max-width: 30rem;
