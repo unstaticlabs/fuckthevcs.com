@@ -8,9 +8,9 @@ import ScrollerPageView from './ScrollerPageView.vue'
     <div class="row main">
       <div class="col col-text col-sm rellax" data-rellax-speed="1">
         <h1>
-          Meaningful&nbsp;<span class="highlighted">work</span>. Paid&nbsp;in&nbsp;<span
+          Meaningful&nbsp;<span class="highlighted">work</span>. Paid&nbsp;in<span
             class="highlighted"
-            >shares.</span
+            >&nbsp;shares.</span
           >
         </h1>
         <p>
@@ -23,7 +23,7 @@ import ScrollerPageView from './ScrollerPageView.vue'
         </p>
       </div>
       <div class="col centered rellax" data-rellax-speed="3" data-rellax-mobile-speed="5">
-        <div class="btns-right">
+        <div class="btns-center">
           <RouterLink to="/fund" class="btn secondary">Explore projects</RouterLink>
         </div>
       </div>

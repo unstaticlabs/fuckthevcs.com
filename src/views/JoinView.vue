@@ -5,28 +5,23 @@ import SocialsComponent from '../components/SocialsComponent.vue'
 </script>
 
 <template>
-  <ScrollerPageView>
+  <ScrollerPageView forceScrolled="true">
     <div class="row main">
       <div class="col col-text col-sm">
         <h1>Join the waitlist.</h1>
         <p>
-          We will be live soon with the FTVCs crowd-investment platform. Make sure to be one of the
+          We will be live soon with the FTVCs ("Fuck the VCs") crowd-investment platform. Make sure to be one of the
           first investors, contributors, or users to join.
         </p>
         <SocialsComponent />
-      </div>
-    </div>
-    <div class="row main">
-      <div class="col">
-        <iframe
-          class="airtable-embed"
-          src="https://airtable.com/embed/appZNaTxdi7chbdYQ/pagLOde3F9zjIYSgi/form"
-          frameborder="0"
-          onmousewheel=""
-          width="100%"
-          height="1500"
-          style="background: transparent; border: 1px solid #ccc"
-        ></iframe>
+        <div class="btns-center">
+          <a
+            href="https://airtable.com/embed/appZNaTxdi7chbdYQ/pagLOde3F9zjIYSgi/form"
+            class="btn accent large"
+          >
+            Sign-up form (on Airtable.com)
+          </a>
+        </div>
       </div>
     </div>
   </ScrollerPageView>

@@ -1,22 +1,27 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-
-const props = defineProps(['disabled'])
-
+import { onMounted, onUnmounted, ref } from 'vue'
 import Rellax from 'rellax'
 
-const scrolled = ref(false)
+const props = defineProps(['disabled', 'forceScrolled'])
+const scrolled = ref(!!props.forceScrolled)
 
 const updateScroll = () => {
-  if (!props.disabled) scrolled.value = window.scrollY >= window.innerHeight / 4
+  scrolled.value = window.scrollY >= window.innerHeight / 4
 }
 
 onMounted(() => {
   new Rellax('.rellax', {
     breakpoints: [0, 800, 1201]
   })
-  window.addEventListener('scroll', updateScroll)
+  if (!props.disabled && !props.forceScrolled) {
+    window.addEventListener('scroll', updateScroll)
+  }
   window.scrollTo(0, 0)
+  scrolled.value = !!props.forceScrolled
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', updateScroll)
 })
 </script>
 
@@ -32,21 +37,10 @@ div.container {
   flex-direction: column;
   padding: 1rem 6rem;
   align-items: stretch;
+  overflow: hidden;
 
   .highlighted {
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      left: 16px;
-      padding: 0 16px;
-      margin-top: 32px;
-      width: 105%;
-      height: 24px;
-      background-color: var(--color-accent);
-      z-index: -1;
-      transition: 0.2s all;
-    }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, var(--color-accent) 50%);
   }
 
   .btns-right {
@@ -109,6 +103,10 @@ div.container {
     justify-content: space-between;
     align-items: flex-start;
     margin: 1rem 0;
+
+    &.reversed {
+      flex-direction: row-reverse;
+    }
 
     & > div.col {
       flex-grow: 2;
@@ -245,7 +243,7 @@ div.container {
       margin-top: 16px;
     }
 
-    div.row {
+    div.row, div.row.reversed {
       flex-direction: column;
 
       &.main {

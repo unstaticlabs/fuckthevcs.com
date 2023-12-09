@@ -7,13 +7,17 @@ import ScrollerPageView from './ScrollerPageView.vue'
   <ScrollerPageView>
     <div class="row main">
       <div class="col col-text col-sm rellax" data-rellax-speed="2">
-        <h1><span class="highlighted">Maximizing</span>&nbsp;utility.</h1>
+        <h1><span class="highlighted">Maximizing&nbsp;</span>utility.</h1>
         <p>
           <b>Investors are curators.</b>
-          The process of projects selection and promotion is what creates value.
         </p>
+        <p>The process of projects selection and promotion is what creates value.</p>
         <p>Curators bet on projects with the <b>fastest innovation</b> speed.</p>
-        <RouterLink to="/fund" class="btn secondary">Explore projects</RouterLink>
+      </div>
+      <div class="col centered rellax" data-rellax-speed="5">
+        <div class="btns-center">
+          <RouterLink to="/fund" class="btn secondary">Explore projects</RouterLink>
+        </div>
       </div>
     </div>
 

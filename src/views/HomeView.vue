@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router'
     <div class="row main">
       <div class="col col-text col-sm rellax" data-rellax-speed="1">
         <h1>
-          <span class="highlighted">The&nbsp;future</span>&nbsp;of innovation&nbsp;<span
+          <span class="highlighted">The&nbsp;future&nbsp;</span>of innovation&nbsp;<span
             class="highlighted"
             >is&nbsp;ours</span
           >

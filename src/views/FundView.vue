@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router'
       <div class="col col-text col-sm rellax" data-rellax-speed="1">
         <h1>
           <span class="highlighted">Fundraising</span> for your
-          <span class="highlighted">open-source</span>&nbsp;projects
+          <span class="highlighted">open-source&nbsp;</span>projects
         </h1>
         <p>
           Crowdfunding with a new investment model: Trademarks valuation.
@@ -88,8 +88,8 @@ import { RouterLink } from 'vue-router'
       </div>
     </div>
 
-    <div class="row align-end rellax" data-rellax-speed="-0.7">
-      <div class="col col-text col-md">
+    <div class="row reversed align-end rellax" data-rellax-speed="-0.7">
+      <div class="col centered col-text col-md">
         <h2>Call for Projects (opening soon)</h2>
         <h3>End-user-facing, Privacy-first, Open-Source</h3>
         <p>
@@ -99,11 +99,14 @@ import { RouterLink } from 'vue-router'
         <p>
           <b>Get notified when the crowd-investment platform is live. Coming soon! </b>
         </p>
-        <div class="btns-right">
+      </div>
+      <div class="col centered">
+        <div class="btns-center">
           <RouterLink to="/join" class="btn accent">Sign-up for the waiting-list</RouterLink>
         </div>
       </div>
     </div>
+    <div class="row"></div>
   </ScrollerPageView>
 </template>
 

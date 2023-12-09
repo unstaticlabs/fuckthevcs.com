@@ -9,7 +9,7 @@ import ScrollerPageView from './ScrollerPageView.vue'
       <div class="col col-text col-sm rellax" data-rellax-speed="3">
         <h1>
           Yes&nbsp;to&nbsp;<span class="highlighted">innovation</span>.
-          <span class="highlighted">No</span>&nbsp;to&nbsp;consumerism.
+          <span class="highlighted">No&nbsp;to&nbsp;</span>consumerism.
         </h1>
         <p>
           <b>Farm-to-table tech solutions</b>. Locally grown, serving your needs, without
@@ -18,7 +18,7 @@ import ScrollerPageView from './ScrollerPageView.vue'
         <p>Don't just use technology. <b>Fund what you believe in.</b></p>
       </div>
       <div class="col centered rellax" data-rellax-speed="5">
-        <div class="btns-right">
+        <div class="btns-center">
           <RouterLink to="/fund" class="btn accent">Explore projects</RouterLink>
         </div>
       </div>
